@@ -61,3 +61,9 @@ split_poems('corpus/verlaine/verlaine_raw.txt',
 
 split_poems('corpus/rimbaud/rimbaud_raw.txt',
             'corpus/rimbaud', 'Rimbaud', 353, 6761)
+
+split_poems('corpus/gautier/gautier_raw.txt',
+            'corpus/gautier', 'Gautier', 337, 10601)
+
+split_poems('corpus/hugo/hugo_raw.txt',
+            'corpus/hugo', 'Hugo', 174, 15157)
