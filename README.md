@@ -1,4 +1,3 @@
-# TSD-Classification_poemes
 # Classification des textes de poèmes par auteur en français
 
 Projet de classification automatique de poèmes français du XIXe siècle par auteur à l’aide de méthodes de machine learning supervisé.
