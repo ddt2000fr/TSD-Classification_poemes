@@ -27,7 +27,7 @@ def normaliser_poeme(texte):
     return texte
 # 1. Chargement des données
 # On suppose que le dossier 'corpus' contient les 5 sous-dossiers d'auteurs
-data = load_files('/Users/dariatupikina/Documents/Traitement_statistique/TSD-Classification_poemes/corpus', encoding='utf-8', decode_error='replace')
+data = load_files('../corpus', encoding='utf-8', decode_error='replace')
 X, y = data.data, data.target
 
 # 2. Division Entraînement / Test (80% / 20%)
@@ -57,7 +57,7 @@ disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=data.target_na
 
 disp.plot(cmap='Purples', ax=ax, xticks_rotation=45)
 plt.title("Matrice de Confusion : Classification des Poètes")
-plt.savefig("/Users/dariatupikina/Documents/Traitement_statistique/TSD-Classification_poemes/resultats/confusion_matrix_SVC.png") # Sauvegarde l'image en PNG
+plt.savefig("../resultats/confusion_matrix_SVC.png") # Sauvegarde l'image en PNG
 plt.show()
 
 print(f"Précision globale (Accuracy) : {accuracy_score(y_test, y_pred):.2%}")

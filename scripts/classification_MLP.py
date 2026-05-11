@@ -13,7 +13,7 @@ def normaliser_poeme(texte):
     return texte
 
 # 1. Chargement sélectif (fichiers commençant par "poem")
-corpus_path = '/Users/dariatupikina/Documents/Traitement_statistique/TSD-Classification_poemes/corpus'
+corpus_path = '../corpus'
 authors = ['baudelaire', 'gautier', 'hugo', 'rimbaud', 'verlaine']
 X, y = [], []
 
@@ -52,7 +52,7 @@ cm = confusion_matrix(y_test, y_pred)
 disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=authors)
 disp.plot(cmap='Blues', ax=ax)
 plt.title("Matrice de Confusion : MLPClassifier (Réseau de Neurones)")
-plt.savefig("/Users/dariatupikina/Documents/Traitement_statistique/TSD-Classification_poemes/resultats/confusion_matrix_MLP.png")
+plt.savefig("../resultats/confusion_matrix_MLP.png")
 plt.show()
 
 print(classification_report(y_test, y_pred, target_names=authors))
